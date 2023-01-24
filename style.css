@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 5px 2px 5px #e5e9f3;
+  height: 10vh;
+  width: 100%;
+}
+.heading .logo {
+  width: 15rem;
+  height: 100%;
+  object-fit: contain;
+}
+.heading .icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.5rem;
+}
+.main {
+  display: flex;
+  height: calc(100vh - 5vh);
+}
+.menubar {
+  min-width: 15rem;
+  background-color: #e5e9f3;
+}
+.topnav {
+  display: flex;
+  flex-direction: column;
+}
+.topnav a {
+  display: block;
+  font-size: 1.2rem;
+  color: #0d0808;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav a:hover {
+  margin-left: 5px;
+  transition: all 0.2s ease-out;
+}
+.topnav a.active {
+  color: #f9fafb;
+  background-color: #2d0185;
+}
+/* main-content */
+.main-content {
+  padding: 1.5rem;
+  line-height: 2rem;
+}
+.main-content p {
+  font-size: 1.1rem;
+}
+/* Table */
+table {
+  border-collapse: collapse;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+table td {
+  padding: 15px;
+}
+table thead td {
+  background-color: #e5e9f3;
+  color: #0d0808;
+  font-weight: bold;
+  font-size: 13px;
+  border: 1px solid #e5e9f3;
+}
+table tbody td {
+  color: #636363;
+  border: 1px solid #dddfe1;
+}
+table tbody tr {
+  background-color: #f9fafb;
+  font-size: 11px;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
