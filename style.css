@@ -23,7 +23,7 @@
 }
 .main {
   display: flex;
-  height: calc(100vh - 5vh);
+  height: 100vh;
 }
 .menubar {
   min-width: 15rem;
@@ -81,4 +81,12 @@ table tbody tr {
 }
 table tbody tr:nth-child(odd) {
   background-color: #ffffff;
+}
+.result-summary{
+  padding: 1rem auto;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  color: #2d0185;
+  font-size: 1rem;
 }
