@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home | Spring Flowers School</title>
     <link rel="stylesheet" href="style.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <title>Document</title>
   </head>
   <body>
     <header>
@@ -39,23 +39,38 @@
     <div class="main">
       <div class="menubar">
         <div class="topnav">
-          <a href="welcome.html">Home</a>
+          <a class="active" href="#index">Home</a>
           <a href="timeTable.html">Time Table</a>
           <a href="examResult.html" target="_blank">Exam Result</a>
           <a href="extraActivities.html">Extra Activity</a>
         </div>
       </div>
-      <div class="main-content">
-        <h2 class="text-align-c m-b-1">Profile</h2>
-        <div class="profile-card">
-          <p>Name : FAHD S.N</p>
-          <p>Program : MASTER OF COMPUTER APPLICATIONS</p>
-          <p>USN : 211VMTR00419</p>
-          <p>Program Code : VMCA</p>
-          <p>Email: fahdpno@gmail.com</p>
+      <div class="main-content m-t-1">
+        <div class="text-align-c m-t-1">
+          <h1>Welcome to the Spring Flowers school</h1>
+        </div>
+        <div class="text-align-c m-t-1">
+          <h2>List of Extra Activities</h2>
+          <table style="margin-top: 5rem; margin-left: 11rem">
+            <thead>
+              <tr>
+                <td>Activities Name</td>
+                <td>Activities Details</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="activityNameData"></td>
+                <td id="activityDetailData"></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
   </body>
   <script src="./app.js"></script>
+  <script>
+    listActivity();
+  </script>
 </html>

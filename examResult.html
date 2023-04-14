@@ -5,34 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Exam Result | Spring Flowers School</title>
   </head>
   <body>
     <header>
       <div class="heading">
-        <img class="logo" src="./Assets/Jain-online_logo.png" />
-        <a href="profile.html"
-          ><img class="icon" src="./Assets/user.png" alt="profile-pic" />
-        </a>
+        <div class="flex">
+          <img
+            class="logo"
+            src="./Assets/School-PNG-Picture-removebg-preview.png"
+            alt=""
+          />
+          <p>Spring Flowers School</p>
+        </div>
+        <div class="dropdown m-r-12">
+          <button
+            class="btn btn-primary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            id="studentName"
+          >
+            Student Name <span class="caret"></span>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html">Logout</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <div class="main">
       <div class="menubar">
         <div class="topnav">
-          <a href="index.html">Home</a>
+          <a href="welcome.html">Home</a>
           <a href="timeTable.html">Time Table</a>
           <a class="active" href="examResult.html">Exam Result</a>
           <a href="extraActivities.html">Extra Activity</a>
         </div>
       </div>
       <div class="main-content">
-        <h2>JAIN ONLINE PROVISIONAL EXAMINATION RESULT- SEP-2022</h2>
-        <p>Name : FAHD S N</p>
-        <p>Program : MASTER OF COMPUTER APPLICATIONS</p>
-        <p>USN : 211VMTR00419</p>
-        <p>Program Code : VMCA</p>
-        <p>Semester : 2</p>
-        <table>
+        <h2 class="text-align-c m-b-1">
+          JAIN ONLINE PROVISIONAL EXAMINATION RESULT- SEP-2022
+        </h2>
+        <div class="flex gap-3 m-b-1">
+          <p><span class="bold">NAME :</span> FAHD S N</p>
+          <p>
+            <span class="bold">Program :</span> MASTER OF COMPUTER APPLICATIONS
+          </p>
+          <p><span class="bold">USN :</span> 211VMTR00419</p>
+          <p><span class="bold">Program Code : </span>VMCA</p>
+          <p><span class="bold">Semester :</span> 2</p>
+        </div>
+        <table class="m-b-1">
           <thead>
             <tr>
               <td>SlNo</td>
@@ -99,11 +125,12 @@
           </tbody>
         </table>
         <div class="result-summary">
-          <p>Class :  EXCELLENT</p>
-          <p>Grand Total :  436</p>
-          <p>SGPA :  9.20</p>
+          <p>Class : EXCELLENT</p>
+          <p>Grand Total : 436</p>
+          <p>SGPA : 9.20</p>
         </div>
       </div>
     </div>
   </body>
+  <script src="./app.js"></script>
 </html>

@@ -1,7 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.gap-3 {
+  gap: 3rem;
+}
+.red {
+  color: red;
+}
+.text-align-c {
+  text-align: center;
+}
+.m-t-1 {
+  margin-top: 1rem;
+}
+.m-t-2 {
+  margin-top: 2rem;
+}
+.m-r-12 {
+  margin-right: 12rem;
+}
+.m-b-1 {
+  margin-bottom: 1rem;
+}
+.m-l-8 {
+  margin-left: 8rem;
+}
+.bold {
+  font-weight: bold;
 }
 .heading {
   display: flex;
@@ -12,9 +49,17 @@
   width: 100%;
 }
 .heading .logo {
-  width: 15rem;
+  margin-left: 1rem;
+  width: 4rem;
   height: 100%;
   object-fit: contain;
+  color: #2d0185;
+}
+.heading p {
+  margin-left: 10px;
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+  color: #2d0185;
 }
 .heading .icon {
   width: 2.4rem;
@@ -26,7 +71,7 @@
   height: 100vh;
 }
 .menubar {
-  min-width: 15rem;
+  min-width: 20rem;
   background-color: #e5e9f3;
 }
 .topnav {
@@ -35,7 +80,7 @@
 }
 .topnav a {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1.7rem !important;
   color: #0d0808;
   padding: 14px 16px;
   text-decoration: none;
@@ -50,11 +95,12 @@
 }
 /* main-content */
 .main-content {
+  margin: 0 auto;
   padding: 1.5rem;
   line-height: 2rem;
 }
 .main-content p {
-  font-size: 1.1rem;
+  font-size: 1.7rem;
 }
 /* Table */
 table {
@@ -82,11 +128,129 @@ table tbody tr {
 table tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
-.result-summary{
+.result-summary {
   padding: 1rem auto;
   display: flex;
   font-weight: bold;
   justify-content: space-between;
   color: #2d0185;
   font-size: 1rem;
+}
+.school-img-div {
+  width: 50%;
+  margin: 2rem auto;
+}
+.school-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.profile-card {
+  width: 35rem;
+  background-color: #2d0185;
+  color: white;
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+/* Login Form */
+.wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 1rem;
+  margin-top: 5rem;
+}
+
+#formContent {
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 450px;
+  position: relative;
+  padding: 0px;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+#form-div {
+  padding: 1rem 0 2rem;
+}
+#form-div input {
+  margin: 1rem auto;
+}
+
+/* FORM TYPOGRAPHY*/
+
+.login-btn {
+  background-color: #2d0185;
+  border: none;
+  color: white;
+  padding: 15px 80px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  -webkit-box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  box-shadow: 0 10px 30px 0 rgba(95, 186, 233, 0.4);
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+  margin: 5px 20px 40px 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-btn {
+  background-color: #2d0185;
+}
+
+input[type="text"],
+input[type="password"] {
+  background-color: #f6f6f6;
+  border: none;
+  color: #0d0d0d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 5px;
+  width: 85%;
+  border: 2px solid #f6f6f6;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+input[type="text"]:focus {
+  background-color: #fff;
+  border-bottom: 2px solid #2d0185;
+}
+
+input[type="text"]:placeholder {
+  color: #cccccc;
+}
+
+#loginError {
+  display: none;
+}
+.btn-primary {
+  background-color: #2d0185;
+}
+.btn-primary:hover {
+  background-color: white;
+  color: #2d0185;
 }

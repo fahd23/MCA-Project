@@ -4,30 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Home | Spring Flowers School</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
       <div class="heading">
-        <img class="logo" src="./Assets/Jain-online_logo.png" />
-        <a href="profile.html"
-          ><img class="icon" src="./Assets/user.png" alt="profile-pic" />
-        </a>
-      </div>
-    </header>
-    <div class="main">
-      <div class="menubar">
-        <div class="topnav">
-          <a class="active" href="#index">Home</a>
-          <a href="timeTable.html">Time Table</a>
-          <a href="examResult.html">Exam Result</a>
-          <a href="extraActivities.html">Extra Activity</a>
+        <div class="flex">
+          <img
+            class="logo"
+            src="./Assets/School-PNG-Picture-removebg-preview.png"
+            alt=""
+          />
+          <p>Spring Flowers School</p>
         </div>
       </div>
-      <div class="main-content">
-        <h2>Welcome to the Spring Flowers school</h2>
+    </header>
+
+    <div class="wrapper">
+      <div id="formContent">
+        <div class="m-t-2">
+          <h2>Login</h2>
+        </div>
+        <!-- Login Form -->
+        <div id="form-div">
+          <input
+            type="text"
+            id="username"
+            placeholder="username"
+            onfocus="hideLoginError()"
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            onfocus="hideLoginError()"
+          />
+          <button class="login-btn" onclick="login()">Submit</button>
+        </div>
       </div>
     </div>
+    <div class="mt-t-1 text-align-c red" id="loginError">
+      <h5>Error!!! Invalid username or password</h5>
+    </div>
   </body>
+  <script src="./app.js"></script>
 </html>
