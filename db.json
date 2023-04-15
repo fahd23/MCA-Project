@@ -1,0 +1,77 @@
+{
+  "students": [
+    {
+      "id": "101",
+      "username": "Fahd",
+      "password": "123",
+      "dateOfBirth": "1999-12-23",
+      "email": "johndoe@gmail.com",
+      "grades": [
+        {
+          "subject": "Maths",
+          "marks": 85,
+          "grade": "A"
+        },
+        {
+          "subject": "Science",
+          "marks": 75,
+          "grade": "B"
+        },
+        {
+          "subject": "English",
+          "marks": 90,
+          "grade": "A"
+        }
+      ],
+      "totalGrade": "9.46"
+    },
+    {
+      "id": "102",
+      "username": "Smith",
+      "password": "456",
+      "dateOfBirth": "1999-02-27",
+      "email": "janesmith@gmail.com",
+      "grades": [
+        {
+          "subject": "Maths",
+          "marks": 80,
+          "grade": "A"
+        },
+        {
+          "subject": "Science",
+          "marks": 70,
+          "grade": "B"
+        },
+        {
+          "subject": "English",
+          "marks": 95,
+          "grade": "A+"
+        }
+      ]
+    },
+    {
+      "id": "103",
+      "username": "Virat",
+      "password": "789",
+      "dateOfBirth": "2000-5-1",
+      "email": "virat@gmail.com",
+      "grades": [
+        {
+          "subject": "Maths",
+          "marks": 75,
+          "grade": "B+"
+        },
+        {
+          "subject": "Science",
+          "marks": 80,
+          "grade": "A"
+        },
+        {
+          "subject": "English",
+          "marks": 70,
+          "grade": "B"
+        }
+      ]
+    }
+  ]
+}
